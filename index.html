@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Calculadora</title>
+</head>
+<body>
+    <form class="conteudo" name="Calculadora">
+            <div class="row">
+                <input type="text" class="texto" name="text1" disabled>
+                <button type="button" class="botaoLimpar" name="btnlimpar" onclick="location.reload()"><span class="material-icons">backspace</span></button>
+                <div class="linha"></div>
+                <div class="botoes">
+                    <div class="col-12 pt-2">
+                        <input type="button" class="botao" name="btn7" value="7" onclick="displaynum(btn7.value)">
+                        <input type="button" class="botao" name="btn8" value="8" onclick="displaynum(btn8.value)">
+                        <input type="button" class="botao"name="btn9" value="9" onclick="displaynum(btn9.value)">
+                        <input type="button" class="botao operadores" name="btndivisao" value="/" onclick="displaynum(btndivisao.value)">             
+                    </div>
+                    <div class="col-12 pt-2">
+                        <input type="button" class="botao" name="btn4" value="4" onclick="displaynum(btn4.value)">
+                        <input type="button" class="botao" name="btn5" value="5" onclick="displaynum(btn5.value)">
+                        <input type="button" class="botao" name="btn6" value="6" onclick="displaynum(btn6.value)">
+                        <input type="button" class="botao operadores" name="btnvezes" value="*" onclick="displaynum(btnvezes.value)">                
+
+                    </div>
+                    <div class="col-12 pt-2">
+                        <input type="button" class="botao" name="btn1" value="1" onclick="displaynum(btn1.value)">
+                        <input type="button" class="botao" name="btn2" value="2" onclick="displaynum(btn2.value)">
+                        <input type="button" class="botao" name="btn3" value="3" onclick="displaynum(btn3.value)">
+                        <input type="button" class="botao operadores" name="btnsubtracao" value="-" onclick="displaynum(btnsubtracao.value)">
+
+                    </div>
+                    <div class="col-12 pt-2">        
+                        <input type="button" class="botao operadores" name="btnvirgula" value="." onclick="displaynum(btnvirgula.value)">
+                        <input type="button" class="botao" name="btn0" value="0" onclick="displaynum(btn0.value)">
+                        <input type="button" class="botao igual" name="btnigual" value="=" onclick="text1.value=eval(text1.value)">  
+                        <input type="button" class="botao operadores" name="btnsoma" value="+" onclick="displaynum(btnsoma.value)">
+
+                    </div>
+                </div>
+            </div>
+    </form>
+</body>
+<script src="script.js"></script>
+</html>

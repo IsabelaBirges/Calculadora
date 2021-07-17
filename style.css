@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300&display=swap');
+
+body{
+    background: linear-gradient(45deg, #343A40,#4e4c4cc5 );
+    background-repeat: no-repeat;
+    min-width: 100vh;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.texto{
+    width: 230px;
+    height: 100px;
+    border-radius: 22px;
+    letter-spacing: 5px;
+    text-align: center;
+    /*margin-bottom: 12px;*/
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    color: #fff;
+}
+
+.conteudo{
+    background-color: black;
+    min-width: 80px;
+    min-height: 100px;
+    height: 500px;
+    width: 320px;
+    padding: 3rem;
+    border-radius: 20px;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.linha{
+    border-bottom:solid 1.0px; 
+    padding: 5px;
+    color: #6c757d
+}
+
+.botoes{
+    padding-top: 15px;
+}
+
+input{
+    width: 53px;
+    height: 52px;
+}
+
+.botao{
+    border-radius: 100px;
+    color: #fff;
+    background-color: #4e4c4cc5;
+    border-color: #4e4c4cc5;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.operadores{
+    color: #3bcf09;
+}
+
+.botaoLimpar{
+    color: #fff;
+    background-color: transparent;
+    border-radius: 100px;
+    border-color: transparent;
+    width: 53px;
+    height: 52px;
+    text-align: right;
+    padding-top: 15px;
+}
+
+.igual{
+    background-color: #2D9808;
+}
+
+.material-icons-outlined{
+    background-color: black;
+    color: #fff;
+}
